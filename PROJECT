@@ -1,0 +1,17 @@
+domain: k8s.ianvs.cloud
+layout:
+- go.kubebuilder.io/v3
+multigroup: true
+projectName: crd
+repo: github.com/kube-ianvs/ianvs-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: k8s.ianvs.cloud
+  group: cluster
+  kind: Credential
+  path: github.com/kube-ianvs/ianvs-operator/apis/cluster/v1
+  version: v1
+version: "3"
